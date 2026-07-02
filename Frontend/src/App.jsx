@@ -6,9 +6,9 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/create-post" element={<CreatePost />} />
-        <Route path="/feed" element={<Feed />} />
-     <Route path="/" element={<div><h1>Welcome to the App!</h1></div>} />
+       <Route path="/" element={<Feed />} />
+<Route path="/create-post" element={<CreatePost />} />
+<Route path="/feed" element={<Feed />} />
       </Routes>
     </Router>
   );
