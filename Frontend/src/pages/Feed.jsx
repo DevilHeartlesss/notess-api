@@ -65,24 +65,21 @@ const Feed = () => {
             <div className="post-content">
   <p>{post.caption}</p>
 
-  <div className="post-actions">
-   <button
-  style={{
-    background: "red",
-    color: "white",
-    padding: "10px",
-    width: "100%",
-    fontSize: "20px"
-  }}
-  onClick={() => deletePost(post._id)}
->
-  DELETE
-</button>
+
+
+<div className="post-actions">
+  <button
+    className="delete-btn"
+    onClick={() => deletePost(post._id)}
+  >
+    🗑 Delete
+  </button>
+</div>
   </div>
 
           </div>
 
-        </div>
+      
         ))
       ) : (
         <h2>No Posts Available</h2>
